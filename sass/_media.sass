@@ -1,0 +1,242 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.info-section
+		.container-1240
+			grid-template-columns: repeat(3, 1fr)
+			.info-item
+				&:nth-child(4)
+						grid-column: 2
+
+@media only screen and (max-width : 1280px)
+	.cd-primary-nav 
+		.nav-grid
+			padding: 0 20px
+ 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.intro-buttons
+		transform: translateY(-35px)
+		.button
+			font-size: 13px
+
+	.navbar-link-border
+		display: none
+
+	.grid-information
+		.grid-information-content
+			grid-template-columns: repeat(2, 1fr)
+			.grid-information-item
+				min-height: 30vh
+				.information-item-desc
+					padding: 20px
+					display: grid
+					position: static
+					color: #fff		
+					background-color: rgba(0,0,0,0)	
+					h2
+						margin: 0
+						position: static
+						top: 50%
+						left: 0
+						width: 100%
+						font-size: 30px
+						text-shadow: none
+						font-family: akrobat-black
+						transition: all 0.35s
+						transform: translate3d(0,0,0)
+					p
+						margin: 0
+						font-size: 16px
+						position: static
+						bottom: 0
+						left: 0
+						padding: 1.5em
+						width: 100%
+						opacity: 1
+						transform: translate3d(0,0,0)	
+					p.learn-more
+						display: block
+					&::before
+						display: none		
+
+				&:hover .information-item-desc>p,
+				&:hover .information-item-desc::before
+					opacity: 1
+					transition: all .4s
+					transform: translate3d(0,0,0)		
+				&:hover .information-item-desc>p
+					transform: translate3d(0,0,0)			
+				&:hover .information-item-desc>h2
+					color: #fff
+					text-shadow: none
+					transition: all .4s
+					transform: translate3d(0,0,0) translate3d(0,0,0)	
+
+				&:nth-child(1)
+					grid-column: 1
+				&:nth-child(2)
+					grid-column: 2
+				&:nth-child(3)
+					grid-column: 1
+				&:nth-child(4)
+					grid-column: 2
+				&:nth-child(5)
+					grid-column: 1
+				&:nth-child(6)
+					grid-column: 2
+				&:nth-child(7)
+					grid-column: 1 / 3
+			
+				&::before
+					content: ''
+					position: absolute
+					top: 0
+					right: 0
+					left: 0
+					bottom: 0
+					background-color: rgba(0,0,0,0.6)
+
+	.double-info
+		.container-1240
+			.container-item
+				grid-template-columns: 1fr
+			.personal
+				.item-img
+					grid-row: 1
+					
+
+	.info-section
+		.container-1240
+			grid-template-columns: repeat(2, 1fr)
+			.info-item
+				&:nth-child(4)
+						grid-column: 1
+
+	.placement
+		.container-1240
+			.map-desc
+				display: none
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.cd-primary-nav 
+		.nav-grid
+			grid-template-columns: 1fr
+
+	.navbar-link-rent
+		display: none
+
+	.intro-content
+		font-size: 15px
+		h1
+			font-size: 60px
+		.button
+			font-size: 12px
+
+	.form-arrival
+		h2
+			font-size: 20px
+		form
+			grid-template-columns: repeat(2, 1fr)
+
+	.info-section
+		.container-1240
+			grid-template-columns: 1fr
+			.info-item
+				&:nth-child(1)
+					grid-column: 1
+				
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	.intro-buttons
+		transform: translateY(-20px)
+
+	.grid-information
+		.grid-information-content
+			grid-template-columns: 1fr
+			.grid-information-item
+				&:nth-child(1)
+					grid-column: 1
+				&:nth-child(2)
+					grid-column: 1
+				&:nth-child(3)
+					grid-column: 1
+				&:nth-child(4)
+					grid-column: 1
+				&:nth-child(5)
+					grid-column: 1
+				&:nth-child(6)
+					grid-column: 1
+				&:nth-child(7)
+					grid-column: 1
+		.grid-information-question
+			font-size: 14px
+			max-width: 301px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.intro-buttons
+		transform: translateY(0px)
+
+	.intro-content
+		padding: 0
+		font-size: 12px
+		h1
+			font-size: 40px
+		.button
+			font-size: 10px
+
+	.welcome
+		.container-1240
+			h2
+				font-size: 17px
+			p
+				font-size: 15px
+
+	.form-arrival
+		h2
+			font-size: 16px
+		form
+			grid-template-columns: 1fr
+	
+	.double-info 
+		.container-1240 
+			.container-item 
+				.item-img
+					min-height: 210px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.intro-buttons
+		transform: translateY(-60px)
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
